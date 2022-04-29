@@ -854,7 +854,7 @@ html {
 // ===================== CHEFS ======================
 
 .chefs {
-
+   margin: 0 0 100px 0;
    &__container {
       @include container(1100px);
       position: relative;
@@ -968,12 +968,28 @@ html {
 
    &__container {
       @include container(1100px);
+      position: relative;
    }
 
    &__top {
+      &::before{
+         content: "";
+         display: block;
+         background: url(../img/main/how_it_works/EVENTS.png) 0 0 no-repeat;
+         width: 350px;
+         height: 150px;
+         position: absolute;
+         top: 10px;
+         left: 300px;
+         transform: translate(65px, 0px);
+         z-index: 1;
+      }
    }
 
    &__title {
+      position: relative;
+      z-index: 10;
+      margin: 0 0 90px 0;
    }
 
    &__row {
@@ -1067,6 +1083,8 @@ html {
    }
 }
 .title {
+   position: relative;
+   z-index: 10;
 }
 .icon {
 
